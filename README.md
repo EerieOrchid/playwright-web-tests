@@ -112,6 +112,7 @@ npm run test:mobile
 npm run test:a11y
 
 # Run by tag
+npx playwright test --grep @functional
 npx playwright test --grep @security
 npx playwright test --grep @visual
 npx playwright test --grep @high
