@@ -25,9 +25,9 @@ export class LoginFormPage extends BasePage {
     this.passwordInput = page.locator('#formBasicPassword');
     this.loginButton = page.getByRole('button', { name: 'Sign in' });
     // Success message - green alert that appears after successful login
-    this.successMessage = page.locator('.alert-success, [role="alert"]:has-text("success"), [role="alert"]:has-text("Welcome")');
+    this.successMessage = page.locator('[role="alert"].alert-success');
     // Error message - red/pink alert that appears after failed login (excludes the demo credentials info box)
-    this.errorMessage = page.locator('.alert-danger, [role="alert"]:has-text("required"), [role="alert"]:has-text("Invalid"), [role="alert"]:has-text("incorrect")');
+    this.errorMessage = page.locator(' [role="alert"].alert-danger');
   }
 
   /**
