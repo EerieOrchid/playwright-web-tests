@@ -27,7 +27,7 @@ export class LoginFormPage extends BasePage {
     // Success message - green alert that appears after successful login
     this.successMessage = page.locator('[role="alert"].alert-success');
     // Error message - red/pink alert that appears after failed login (excludes the demo credentials info box)
-    this.errorMessage = page.locator(' [role="alert"].alert-danger');
+    this.errorMessage = page.locator('[role="alert"].alert-danger');
   }
 
   /**
